@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>form</title>
+    <link rel="stylesheet" href="resourse/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container-sm">
+        <div class="row  mt-5">
+
+            <div class="col-md-8 offset-md-2 blog-main">
+                <div class="blog-post bg-white p-5 rounded shadow mb-4">
+                    <h3 class="mb-5 text-center">Contact ME</h3>
+                    <div id="error_message"></div>
+                    <form onsubmit="return validate();" action="/" method="post">
+                        <div class="form-group row mb-3">
+                            <div class="col-md">
+                                <input id="name" type="text" placeholder="Name" class="form-control" name="name"
+                                    id="name">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="input-group col-md ">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                    id="email1">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" placeholder="Server" id="email2">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="form-control" placeholder="Message" aria-label="With textarea"
+                                id="message"></textarea>
+                        </div>
+                        <div class="form-group row mb-3 mb-0 mt-4 ">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="mb-3">
+                    <a href="index.html" class="text-sm text-muted"><small>Press To Return</small></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="resourse/js/check.js"></script>
+
+</body>
+
+</html>

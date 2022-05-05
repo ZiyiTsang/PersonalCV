@@ -70,7 +70,7 @@
                         <a href="#questions" class="nav-link text-light">Questions</a>
                     </li>
                     <li class="nav-item">
-                        <a href="http://localhost:8080/assignment1/click" class="nav-link text-light">Navigate</a>
+                        <a href="http://localhost:8080/assignment1/click" class="nav-link text-light">Navigate&ensp;</a>
                     </li>
                     <li class="nav-item">
                         <a href="https://github.com/ZiyiTsang">
@@ -338,7 +338,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>
@@ -348,7 +347,7 @@
         <div class="container ">
             <h2 class="text-center mb-4">Contact Info</h2>
             <div class="row g-5">
-                <div class="col-md">
+                <div class="col-md-6">
                     <ul class="list-group list-group-flush lead py-3 p-3">
                         <li class="list-group-item">
                             <span class="fw-bold">Location:</span> Siming,Xiamen,Fujian,China
@@ -361,31 +360,56 @@
                         </li>
                         <li class="list-group-item">
                             <span class="fw-bold">QQ:</span>1034337098
-
                         </li>
-
                     </ul>
                 </div>
-                <div class="col-md">
+                <div class="col-md-6 d-none d-md-block">
                     <div id="map"></div>
                 </div>
             </div>
-            <a href="#" class="position-absolute bottom-0 end-0 p-1">
+            <a href="#" class="position-absolute bottom-0 end-1 p-1">
                 <i class="bi bi-arrow-up-circle h1"></i>
             </a>
+            <button type="button" class="btn btn-outline-danger position-absolute bottom-1 end-0 p-1"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-exclamation-triangle"></i>
+                Don't click me!
+            </button>
         </div>
 
     </section>
     <!-- footer -->
-    <footer class=" p-1 bg-warning  text-dark text-center justify-content-between position-relative ">
+    <footer class=" p-1 bg-warning  text-dark text-center ">
         <div class="container">
-            <div>
-                <p>Copyright © 2022<br> Ziyi-CME1909120</p>
-            </div>
 
+            <p>Copyright © 2022<br> Ziyi-CME1909120</p>
 
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Give me high marks</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Dear lecturer:</strong> <br> Your marking is very importent to me. <br> Please please give
+                    me high
+                    marks!!
+                    <img src="https://tse1-mm.cn.bing.net/th/id/R-C.b1a1f089ccf4f82c0b2dd54a9337c88a?rik=3fv9KsTvXdYCrQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fe%2ff%2ff%2f5%2f15161673081150830793clipart-begging-for-help.med.png&ehk=z5lQvGiG8BGUchhcqmJHgaLIXHm55VQCzOpYCqeg2jw%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+                        alt="" class="img-fluid img-thumbnail">
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary">No!</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes!</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

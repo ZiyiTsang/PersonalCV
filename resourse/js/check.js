@@ -24,6 +24,6 @@ function validate() {
         error_message.innerHTML = text;
         return false;
     }
-    alert("Your form is submitted");
+    alert("Your form is submitted!! WOW!!!");
     return true;
 }
